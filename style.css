@@ -55,7 +55,7 @@ header #navigation-menu #menu-pages li {
   transform: translate3d(0, 2px, 0);
 }
 
-#menu-pages li button {
+#menu-pages li button, #seeMore-button {
   align-self: center;
   background-color: #fff;
   background-image: none;
@@ -86,14 +86,18 @@ header #navigation-menu #menu-pages li {
   touch-action: manipulation;
 }
 
-#menu-pages li button:hover {
+#menu-pages li button:hover, #seeMore-button:hover {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
   cursor: pointer;
 }
 
-#menu-pages li button:focus {
+#menu-pages li button:focus, #seeMore-button:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+#seeMore-button  {
+  margin-top: 1rem;
 }
 
 #main #content-main {
@@ -141,6 +145,25 @@ header #navigation-menu #menu-pages li {
 .spotify-card {
   margin-top: 1rem;
 }
+
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 2rem;
+}
+
+.stack-icons icon img {
+  width: 32px;
+  margin-left: 1.5rem;
+}
+
+.HTML-icon img:hover, .CSS-icon img:hover, .ReactJS-icon img:hover, .TailwindCSS-icon img:hover  {
+  box-shadow: rgba(205, 205, 205, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  cursor: pointer;
+  transition: all 235ms ease-in-out;
+} 
 
 @media (min-width: 720px) { 
   #content-main .imagePhoto img {
@@ -208,6 +231,13 @@ header #navigation-menu #menu-pages li {
   header #navigation-menu {
     display: flex;
     flex-direction: row;
+  }
+
+  .tech-stack {
+    margin-top: 2.5rem;
+  }
+  .stack-icons icon img {
+    width: 40px;
   }
 
 }
