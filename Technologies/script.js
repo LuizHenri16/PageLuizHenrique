@@ -1,11 +1,11 @@
 function goHomePage() { 
-  window.location.href = "/index.html"
+  window.location.href = "/index"
 };
 
 function goAboutPage() { 
-  window.location.href = "/about.html"
+  window.location.href = "/about"
 }
 
 function goTechnologiesPage() { 
-  window.location = "/technologies.html"
+  window.location = "/technologies"
 }
